@@ -12,17 +12,28 @@ body {
 .header {
     display: flex;
     background-color: lightblue;
-    padding: 1%;
+   /* padding: 1%;*/
     align-items: center;
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the shadow values as needed */
+    padding: 10px; /* Add padding to make the box shadow visible */
+
 }
 
 .stats-container {
     display: flex;
-}
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
 
+}
+.stats-container:hover {
+    box-shadow: 0 0 30px lightblue;
+}
 .stats-card {
     background-color: #a8b0bc;
     border-radius: 7px;
@@ -34,6 +45,7 @@ body {
 
 #num-contributions, #total-raised, #num-games {
     font-size: 50px;
+    color: lightblue; /* Set the desired color */
 }
 
 #games-container {
@@ -72,4 +84,7 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+}
+.highlight-text {
+    color: lightblue; /* Set the desired color */
 }
